@@ -1,7 +1,14 @@
-function checkPlindrome(str){
-let rev=""
+let str="amam"
+function Plindrome(str){
+let new_str=""
  for(i=str.length-1;i>=0;i--){
-     rev+=str[i]
+     new_str+=str[i]
  }
-    if(rev==str){
-      return true
+return new_str
+}
+let rev=reverse(str);
+if(str==rev){
+console.log("is a palindromic string");
+}else{
+console.log("Not a palindrome");
+}
